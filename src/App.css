@@ -36,7 +36,7 @@ body {
   width: 80%;
 }
 
-.planet-container {
+.container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
