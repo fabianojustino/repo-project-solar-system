@@ -19,12 +19,40 @@ body {
 }
 
 .solarSystem {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-items: center;
   border: 1px solid white;
   border-radius: 20px;
   display: flex;
-  font-size: 2rem;
+  font-size: 3rem;
   justify-content: center;
-  margin: auto;
-  text-align: center;
+  padding: 20px;
   width: 80%;
+}
+
+.planet-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.planet-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.planet-card p {
+  font-size: 2rem;
+}
+
+.planet-card img {
+  width: 250px;
 }
