@@ -13,16 +13,17 @@ body {
 
 .header {
   display: flex;
-  font-size: 3rem;
+  font-size: 2.1rem;
   justify-content: center;
   padding: 15px;
 }
 
-.solarSystem {
+.title-container {
   align-items: center;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -30,23 +31,24 @@ body {
   border: 1px solid white;
   border-radius: 20px;
   display: flex;
-  font-size: 3rem;
+  font-size: 2.8rem;
   justify-content: center;
   padding: 20px;
   width: 80%;
 }
 
-.container {
+.container-card {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .planet-card {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 5px;
 }
 
 .planet-card p {
@@ -55,4 +57,34 @@ body {
 
 .planet-card img {
   width: 250px;
+}
+
+.container-mission-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-card {
+  border-radius: 20px;
+  box-shadow: 0.2px 0.2px 1px 1px lightblue;
+  font-size: 1.4rem;
+  margin: 10px;
+  width: 25%;
+}
+
+.mission-card p {
+  margin: 10px;
+}
+
+.mission-name {
+  color: orange;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.mission-card hr {
+  margin-bottom: 15px;
+  width: 100%;
 }
