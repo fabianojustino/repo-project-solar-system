@@ -34,7 +34,17 @@ body {
   font-size: 2.8rem;
   justify-content: center;
   padding: 20px;
+  transition-delay: 1s;
+  transition-duration: 2s;
+  transition-property: background-color;
   width: 80%;
+}
+
+.title:hover, .solar-system:hover {
+  background-color: lightgreen;
+  color: red;
+  font-size: 4rem;
+  opacity: 0.9;
 }
 
 .container-card {
@@ -74,6 +84,14 @@ body {
   width: 25%;
 }
 
+.mission-card:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.8rem;
+  transform: translateY(-10px);
+  transition: all 0.6s;
+}
+
 .mission-card p {
   margin: 10px;
 }
@@ -103,19 +121,19 @@ body {
 
 @keyframes big {
 
-  0% {
-    display: -webkit-transform - scale(1, 0);
-    transform: scale(1, 0);
+  from {
+    display: -webkit-transform - scale(1);
+    transform: scale(1);
   }
 
-  100% {
-    display: -webkit-transform - scale(1.8, 0);
-    transform: scale(1.8, 0);
+  to {display: -webkit-transform - scale(1.8);
+    transform: scale(1.8);
   }
+
 }
 
 .planet:hover {
-  animation: loading 2s linear infinite;
+  animation: loading 4s ease-out infinite;
   cursor: pointer;
 }
 
