@@ -42,6 +42,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 20px;
+  width: 80%;
 }
 
 .planet-card {
@@ -87,4 +88,37 @@ body {
 .mission-card hr {
   margin-bottom: 15px;
   width: 100%;
+}
+
+@keyframes loading {
+
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes big {
+
+  0% {
+    display: -webkit-transform - scale(1, 0);
+    transform: scale(1, 0);
+  }
+
+  100% {
+    display: -webkit-transform - scale(1.8, 0);
+    transform: scale(1.8, 0);
+  }
+}
+
+.planet:hover {
+  animation: loading 2s linear infinite;
+  cursor: pointer;
+}
+
+.planet-name:hover {
+  animation: big 2s linear infinite;
 }
